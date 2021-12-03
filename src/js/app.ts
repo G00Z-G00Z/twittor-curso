@@ -1,4 +1,12 @@
 
+if (navigator.serviceWorker) {
+    window.onload = () => {
+        navigator.serviceWorker.register("/sw.js")
+    }
+}
+
+
+
 // Referencias de jQuery
 
 let titulo = $('#titulo');
