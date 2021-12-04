@@ -1,4 +1,6 @@
+// Imports 
 
+importScripts("js/sw-utils.js")
 
 const scope = (self as unknown) as ServiceWorkerGlobalScope
 
@@ -16,6 +18,7 @@ const APP_SHELL = [
     "/",
     "index.html",
     "js/app.js",
+    "js/sw-utils.js",
     "css/style.css",
     "img/favicon.ico",
     "img/avatars/hulk.jpg",
@@ -77,12 +80,28 @@ scope.addEventListener("install", (e) => {
 
 scope.addEventListener("activate", (e) => {
 
-
     e.waitUntil(Promise.all([
         erasePrevCache()
     ]))
-
-
-
-
 })
+
+scope.addEventListener('fetch', e => {
+
+    const { request } = e
+
+    const checkResponseAndAnswer = async () => {
+
+        let resp = await caches.match(request)
+
+        if (resp)
+            return resp
+
+        resp = await fetch(request)
+        return actualizarCacheDinamico(CACHE_NAME.dynamic, request, resp)
+
+    }
+
+
+    e.respondWith(checkResponseAndAnswer())
+
+});
