@@ -49,17 +49,5 @@
 	"display": "minimal-ui",
 	"scope": "/",
 	"theme_color": "#3498db",
-	"description": "Es un chat parecido a twitter par a los heroes",
-	"screenshots": [
-		{
-			"src": "/images/screenshot1.png",
-			"type": "image/png",
-			"sizes": "540x720"
-		},
-		{
-			"src": "/images/screenshot2.jpg",
-			"type": "image/jpg",
-			"sizes": "540x720"
-		}
-	]
+	"description": "Es un chat parecido a twitter par a los heroes"
 }
