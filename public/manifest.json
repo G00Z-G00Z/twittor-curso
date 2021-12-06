@@ -46,7 +46,7 @@
 	"orientation": "portrait",
 	"start_url": "index.html",
 	"background_color": "#3498db",
-	"display": "minimal-ui",
+	"display": "standalone",
 	"scope": "/",
 	"theme_color": "#3498db",
 	"description": "Es un chat parecido a twitter par a los heroes"
