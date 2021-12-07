@@ -1,6 +1,5 @@
 "use strict";
 const url = window.location.href;
-console.log(window.location.hostname);
 if (navigator.serviceWorker) {
     window.onload = () => {
         navigator.serviceWorker.register(`${url}sw.js`);
