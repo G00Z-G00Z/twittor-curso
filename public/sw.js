@@ -17,7 +17,7 @@ const CACHE_NAME = {
     inmutable: "inmutable-v1"
 };
 const APP_SHELL = [
-    "/",
+    // "/",
     "index.html",
     "js/app.js",
     "js/sw-utils.js",

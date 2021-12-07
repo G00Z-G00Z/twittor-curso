@@ -15,7 +15,7 @@ const CACHE_NAME: {
 }
 
 const APP_SHELL = [
-    "/",
+    // "/",
     "index.html",
     "js/app.js",
     "js/sw-utils.js",
