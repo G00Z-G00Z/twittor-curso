@@ -9,9 +9,9 @@ const CACHE_NAME: {
     readonly dynamic: string,
     readonly inmutable: string
 } = {
-    static: "static-v2",
-    dynamic: "dynamic-v1",
-    inmutable: "inmutable-v1"
+    static: "static-v3",
+    dynamic: "dynamic-v2",
+    inmutable: "inmutable-v2"
 }
 
 const APP_SHELL = [
