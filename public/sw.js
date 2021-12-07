@@ -12,7 +12,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 importScripts("js/sw-utils.js");
 const scope = self;
 const CACHE_NAME = {
-    static: "static-v1",
+    static: "static-v2",
     dynamic: "dynamic-v1",
     inmutable: "inmutable-v1"
 };

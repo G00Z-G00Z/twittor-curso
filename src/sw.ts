@@ -9,7 +9,7 @@ const CACHE_NAME: {
     readonly dynamic: string,
     readonly inmutable: string
 } = {
-    static: "static-v1",
+    static: "static-v2",
     dynamic: "dynamic-v1",
     inmutable: "inmutable-v1"
 }
