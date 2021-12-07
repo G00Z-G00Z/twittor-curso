@@ -1,7 +1,8 @@
 "use strict";
+const url = window.location.href;
 if (navigator.serviceWorker) {
     window.onload = () => {
-        navigator.serviceWorker.register("/sw.js");
+        navigator.serviceWorker.register(`${url}sw.js`);
     };
 }
 // Referencias de jQuery
