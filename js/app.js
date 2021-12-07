@@ -1,4 +1,6 @@
 "use strict";
+const url = window.location.href;
+console.log(url);
 if (navigator.serviceWorker) {
     window.onload = () => {
         navigator.serviceWorker.register("/sw.js");
